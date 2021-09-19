@@ -7,7 +7,7 @@
 class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
         
-# collect right value,  save it
+
         result = []
         if root:
             stack = [root]
