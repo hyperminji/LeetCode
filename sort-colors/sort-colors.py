@@ -20,7 +20,8 @@ class Solution:
                 nums[i], nums[point2] = nums[point2], nums[i]
                 point2= point2-1
             count = count+1 #정렬완료
-#네덜란드 국기 문제
+
+            #네덜란드 국기 문제
         
                 
         
