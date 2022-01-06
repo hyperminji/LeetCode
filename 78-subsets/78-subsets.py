@@ -7,6 +7,7 @@ class Solution:
             
             for i in range(index, len(nums)):
                 dfs(i+1, path+[nums[i]])
+                #경로(path)를 만들면서 인덱스를 1씩 증가-> 깊이 탐색
         dfs(0, [])
         return result
         
