@@ -1,3 +1,4 @@
+'''   
 class Solution:
     def combine(self, n: int, k: int) -> List[List[int]]:
         result =[]
@@ -18,4 +19,8 @@ class Solution:
                 
         dfs([],1,k)  
         return result
+'''        
         
+class Solution:
+    def combine(self, n: int, k: int) -> List[List[int]]:
+        return list(itertools.combinations(range(1, n+1),k))
