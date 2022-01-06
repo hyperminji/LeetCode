@@ -5,7 +5,7 @@ class Solution:
     def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
         graph = collections.defaultdict(list)
         
-        #그래프 인접 리스트 구성
+        #그래프 인접 리스트 구성 u:기준노드 v:도착노드 w:도착시간 
         for u,v,w in times:
             graph[u].append((v,w))
             
