@@ -1,5 +1,11 @@
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
+        return list(itertools.permutations(nums))
+        
+        
+'''
+class Solution:
+    def permute(self, nums: List[int]) -> List[List[int]]:
         #순열
         result = []
         prev_ele = []
@@ -22,3 +28,4 @@ class Solution:
         dfs(nums)
         return result
         
+'''
