@@ -12,7 +12,7 @@ class Solution:
             
             #자신 이전의 모든 값을 고정해 재귀, 
             #k개의 조합만을 만들어야함
-            for i in range(start, n+1):
+            for i in range(start, n+1): #1부터 n 까지
                 ele.append(i)
                 dfs(ele, i+1, k-1)
                 ele.pop()
