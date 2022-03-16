@@ -10,9 +10,9 @@ class Solution:
         if not head:
             return head
         
-        head.next = self.removeElements(head.next, val)
+        head.next = self.removeElements(head.next, val) #나머지 순회
         if head.val == val:
-            head = head.next
+            head = head.next #다음 노드로 헤드노드 교체
             
         return head
         
