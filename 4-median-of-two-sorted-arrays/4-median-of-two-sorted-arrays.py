@@ -1,19 +1,19 @@
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
         n1, n2 = len(nums1), len(nums2)
-        n = n1+n2
+        n = n1+n2   #nums1+num2의 총 길이
         
-        end = n//2
-        i, i1, i2 = 0,0,0
+        end = n//2  #half
+        i, i1, i2 = 0,0,0  #포인터
         curr, prev = 0, 0
         
         while i <= end:
             prev = curr
-            if i1 == n1:
-                curr = nums2[i2]
+            if i1 == n1: 
+                curr = nums2[i2]  
                 i2+=1
-            elif i2 == n2:
-                curr = nums1[i1]
+            elif i2 == n2: 
+                curr = nums1[i1]  
                 i1 +=1
             elif nums1[i1]< nums2[i2]:
                 curr = nums1[i1]
