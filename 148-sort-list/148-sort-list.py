@@ -1,4 +1,4 @@
-#O(n logn), wjdfufdkfrhflwma rngus 
+#O(n logn), 정렬알고리즘 구현
 
 # Definition for singly-linked list.
 # class ListNode:
