@@ -3,7 +3,7 @@ class Solution:
         left, right = 1, max(piles)
         while left < right :
             mid = (left+right) //2
-            if h < sum(ceil( p /mid) for p in piles):
+            if h < sum(ceil(p/mid) for p in piles):
                 left = mid +1
             else:
                 right = mid
