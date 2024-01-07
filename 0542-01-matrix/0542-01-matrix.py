@@ -7,7 +7,7 @@ class Solution:
         queue = deque()
         MAX_VALUE = m * n
         
-        # Initialize the queue with all 0s and set cells with 1s to MAX_VALUE.
+  
         for i in range(m):
             for j in range(n):
                 if mat[i][j] == 0:
